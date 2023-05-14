@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #777;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: #828282;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.goal {
+  background-color: #f4f4f4;
+  margin: 10px 0;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+.goal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.update {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  background: black;
+  height: "10px";
+}
+
+.form,
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
+.search-bar {
+  font-size: 15px;
+}
+
+.sticky-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .categories {
+  display: none;
+  }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  .categories {
+  display: block;
+  }
+  }
+  .App {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    color: #212121;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+  
+  .joinChatContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .joinChatContainer h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .joinChatContainer input {
+    width: 210px;
+    height: 40px;
+    margin: 7px;
+    border: 2px solid #43a047;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .joinChatContainer button {
+    width: 225px;
+    height: 50px;
+    margin: 7px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    background: #43a047;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .joinChatContainer button:hover {
+    background: #2e7d32;
+  }
+  
+  .chat-window {
+    width: 300px;
+    height: 420px;
+  }
+  
+  .chat-window p {
+    margin: 0;
+  }
+  .chat-window .chat-header {
+    height: 45px;
+    border-radius: 6px;
+    background: #263238;
+    position: relative;
+    cursor: pointer;
+  }
+  .chat-window .chat-header p {
+    display: block;
+    padding: 0 1em 0 2em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 45px;
+  }
+  
+  .chat-window .chat-body {
+    height: calc(450px - (45px + 70px));
+    border: 1px solid #263238;
+    background: #fff;
+  
+    position: relative;
+  }
+  .chat-window .chat-body .message-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .chat-window .chat-body .message-container::-webkit-scrollbar {
+    display: none;
+  }
+  .chat-window .chat-body .message {
+    height: auto;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .chat-window .chat-body .message .message-content {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    max-width: 120px;
+    background-color: #43a047;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  #you {
+    justify-content: flex-start;
+  }
+  
+  #you .message-content {
+    justify-content: flex-start;
+  }
+  
+  #you .message-meta {
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+  
+  #other {
+    justify-content: flex-end;
+  }
+  
+  #other .message-content {
+    justify-content: flex-end;
+    background-color: cornflowerblue;
+  }
+  
+  #other .message-meta {
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+  
+  .message-meta #author {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .chat-window .chat-body .message .message-meta {
+    display: flex;
+    font-size: 12px;
+  }
+  
+  .chat-window .chat-footer {
+    height: 40px;
+    border: 1px solid #263238;
+    border-top: none;
+    display: flex;
+  }
+  
+  .chat-window .chat-footer input {
+    height: 100%;
+    flex: 85%;
+    border: 0;
+    padding: 0 0.7em;
+    font-size: 1em;
+    border-right: 1px dotted #607d8b;
+  
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .chat-window .chat-footer button {
+    border: 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    flex: 15%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 25px;
+    color: lightgray;
+  }
+  
+  .chat-window .chat-footer button:hover {
+    color: #43a047;
+  }
+  .hide {
+    opacity: 0 !important;
+  }
+
+  .goal-container {
+    cursor: pointer;
+  }
+  .side-p-media {
+    width: 60px;
+    height: 60px;
+    border-radius: 5%;
+    border:"";
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+
+
+
+
