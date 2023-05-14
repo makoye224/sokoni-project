@@ -95,4 +95,4 @@
   
   app.use(errorHandler)
 
-  server.listen(port, ()=> console.log(`server started on port ${port}`));
+  server.listen(port, ()=> console.log(`server started on portt ${port}`));
